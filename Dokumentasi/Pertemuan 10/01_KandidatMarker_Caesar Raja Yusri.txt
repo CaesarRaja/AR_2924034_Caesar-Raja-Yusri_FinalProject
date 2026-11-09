@@ -1,0 +1,43 @@
+===========================================================================
+01_KandidatMarker_Caesar
+===========================================================================
+
+1. TABEL PERBANDINGAN KANDIDAT MARKER
+---------------------------------------------------------------------------
+Parameter Evaluasi    | Kandidat 1: image1       | Kandidat 2: image2
+                      | (Kartun Patrick Star)    | (Kartun SpongeBob)
+---------------------------------------------------------------------------
+Kontras Warna         | Sedang                   | Tinggi
+Kerapatan Fitur       | Sedang                   | Tinggi
+Asimetris & Keunikan  | Asimetris, cukup unik    | Asimetris penuh
+Skor/Rating Vuforia   | 3 / 5 Star               | 4 / 5 Star
+Stabilitas Tracking   | Cukup stabil, fitur      | Diperkirakan lebih stabil
+                      | terbatas di bidang datar | di berbagai sudut dan jarak
+---------------------------------------------------------------------------
+Catatan: Nilai berdasarkan pengamatan visual terhadap kedua gambar
+(skor Vuforia dan stabilitas tracking berupa perkiraan, belum diuji
+pada perangkat nyata). Uji tracking dilakukan pada Pertemuan 11.
+
+
+2. ALASAN PEMILIHAN MARKER FINAL
+---------------------------------------------------------------------------
+Marker Final yang dipilih adalah Kandidat 2 (image2) dengan pertimbangan
+teknis sebagai berikut:
+
+1. Detail Fitur yang Kaya (High Feature Point Count):
+   Memiliki detail visual berupa tekstur kain, garis wajah, dan variasi
+   pencahayaan yang tersebar di seluruh area gambar, sehingga memudahkan
+   algoritma computer vision untuk mendeteksi dan melacak image target.
+
+2. Kontras & Asimetri Tinggi:
+   Perbedaan tegas antara area gelap dan aksen cahaya kuning membuat
+   komposisi gambar unik dan tidak memiliki pola simetris berulang yang
+   dapat membingungkan sistem saat mencocokkan gambar dengan library.
+
+3. Stabilitas Tracking:
+   Dengan fitur yang lebih banyak dibandingkan image1 (yang didominasi
+   bidang warna datar), image2 diperkirakan menghasilkan tracking yang
+   lebih stabil saat kamera digerakkan. Tone yang gelap diantisipasi
+   dengan mencetak marker pada kertas matte dan menggunakannya pada
+   ruangan dengan pencahayaan cukup.
+===========================================================================
